@@ -29,9 +29,12 @@ export default function Header() {
             <FaMoon/>
         </Button>
         <Link to='/sign-in'>
-            <Button className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'  >
-                Sign In
+            <Button className="w-24 h-10 relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                <span className="w-full h-full flex items-center justify-center transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
+                    Sign In
+                </span>
             </Button>
+
         </Link>
         <NavbarToggle/>
       </div>
