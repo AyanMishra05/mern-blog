@@ -55,7 +55,7 @@ export const signin = async (req, res, next) => {
       expiresIn: "1d",
     });
     const {password:pass ,...rest}=validUser._doc;
-    res
+    res 
       .status(200)
       .cookie("access_token", token, {
         httpOnly: true,
