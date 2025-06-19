@@ -28,12 +28,16 @@ export default function OAuth() {
             }),
         });
         const data =await res.json();
-        if(res.ok){
+        if(res.ok) {
             dispatch(signInSuccess(data.user));
             navigate("/");
         }
+        else{
+            dispatch(signInFailure(data.message));
+        }
     }catch(error){
         console.error(error);
+        dispatch(signInFailure(error.message));
         // Handle error appropriately, e.g., show an alert or log the error
     
     }

@@ -2,7 +2,7 @@ import { configureStore,combineReducers } from '@reduxjs/toolkit'
 import userReducer from './user/userSlice.js'
 import { persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage'; // defaults to localStorage for web
-import { get } from 'mongoose';
+
 import persistStore from 'redux-persist/es/persistStore';
 
 const rootReducer=combineReducers({
